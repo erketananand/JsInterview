@@ -15,3 +15,10 @@ function print({c:a,b:c,a:b, ...o}){
 }
 print({d:5, a:10, f:15, b:20, g:25, c:30, e:35})
 // 30 10 20 {d: 5, f: 15, g: 25, e: 35}
+
+
+const personal={name:'ketan', sex: 'male'};
+const professional = {name: 'ketan anand', designation: 'SSE', degree: 'B.Tech'};
+const combinedInfo = {...personal, ...professional};
+console.log(combinedInfo);
+// {name: 'ketan anand', sex: 'male', designation: 'SSE, degree: 'B.Tech'}
